@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-docker build -t paulyung/chatgpt-ui:latest --push .
+docker buildx build --platform linux/amd64 -t paulyung/chatgpt-ui:latest --push .
